@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+    font-family: Muli;
+    animation: 3s shake;
+}
+
+h3{
+    font-family: Muli;
+    background-color: violet;
+    padding: .5em;
+}
+
+span,
+p{
+    font-size: 1.2em;
+    font-family: Muli;
+}
+
+input[type="submit"]{
+    padding: .5em 2em;
+    font-size: 1.5em;
+    background-color: limegreen;
+    box-shadow: 1px 1px 5px black;
+    border: solid 1px black;
+}
+
+input:hover{
+    background-color: violet;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* ANIMATIONS*/
+@keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  .shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+  }
+  
